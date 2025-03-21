@@ -1,0 +1,21 @@
+{
+    "name": "mysql-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+      "tasks.max": "1",
+      "database.hostname": "192.168.31.142",
+      "database.port": "3306",
+      "database.user": "debezium",
+      "database.password": "MyStrongPass123!",
+      "database.server.id": "223344",
+      "database.server.name": "mysql_school_server",
+      "database.include.list": "school",
+      "table.include.list": "school.students",
+      "database.history.kafka.bootstrap.servers": "kafka:9092",
+      "database.history.kafka.topic": "mysql_school_server.schema-changes.school",
+      "database.connection.url": "jdbc:mysql://192.168.31.142:3306/school?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC",
+      "database.history.skip.unreachable.databases": "true",
+      "snapshot.locking.mode": "none"
+    }
+  }
+  
