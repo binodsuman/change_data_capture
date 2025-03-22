@@ -44,6 +44,11 @@ Check in Docekr dashboard app. <br>
 curl -H "Accept:application/json" localhost:8083/connectors/
 Return will be []
 
+mysql> create schema school;
+mysql> use school;
+mysql> create table students (id integer, name varchar(100));
+mysql> insert into studens value (1, 'Binod Suman');
+
 curl -s http://localhost:8083/connectors/mysql-connector/status
 
 curl -X POST -H "Accept:application/json" -H "Content-Type:application/json" \
