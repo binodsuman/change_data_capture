@@ -37,7 +37,7 @@ Create folder demo and keep two files:<br>
   b. debezium-connector-config.json<br>
 
 <b> Docker Commands </b>
->docker compose -f debezium-mysql-source-connector.json up -d<br>
+>docker compose -f debezium-mysql-source-connector.yml up -d<br>
 <br>
 Check in Docekr dashboard app. <br>
 
