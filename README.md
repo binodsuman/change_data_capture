@@ -16,14 +16,14 @@ Create my.cnf file in
 >sudo vi my.cnf 
 contents:
 
-[mysqld]
-server-id = 223344
-log_bin = mysql-bin
-binlog_format = row
-binlog_row_image = FULL
-gtid_mode = ON
-enforce-gtid-consistency = TRUE
-require_secure_transport=OFF
+[mysqld]<br>
+server-id = 223344<br>
+log_bin = mysql-bin<br>
+binlog_format = row<br>
+binlog_row_image = FULL<br>
+gtid_mode = ON<br>
+enforce-gtid-consistency = TRUE<br>
+require_secure_transport=OFF<br>
 
 ** Create new user in mysql:
 mysql> CREATE USER 'debezium'@'%' IDENTIFIED WITH mysql_native_password BY 'MyStrongPass123!';
